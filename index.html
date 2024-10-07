@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conteúdo Digital</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="tela_de_rotacao"></div>
+    </section>
+    <!-- CAPA -->
+    <section class="secao capa" id="capa">
+        <a  class="botoes" id="creditos" target="_self"><img src="./imagens/botao_creditos.svg" alt="Botão para os créditos."></a>
+        <div id="titulo_e_botao_iniciar" >
+            <h1>AS TRINCHEIRAS DA GRANDE GUERRA</h1>
+            <a class="botoes" onclick="pularTela('capa','menu')"><img src="./imagens/botao_iniciar.svg" alt="Botão para avançar para o menu."></a>
+        </div>
+    </section>
+    <!-- MENU -->
+    <section class="secao menu" id="menu" style="display: none">
+        <div class="botoes_da_esquerda">
+            <a class="botoes_do_menu" onclick="pularTela('menu','avioes')"><img src="./imagens/botao_avioes.svg" alt="Botão para avançar para o cartão sobre os aviões."></a>
+            <a class="botoes_do_menu" onclick="pularTela('menu','metralhadoras')"><img src="./imagens/botao_metralhadoras.svg" alt="Botão para avançar para o cartão sobre as metralhadoras."></a>
+            <a class="botoes_do_menu" onclick="pularTela('menu','tuneis')"><img src="./imagens/botao_tuneis.svg" alt="Botão para avançar para o cartão sobre os túneis."></a>
+            <a class="botoes_do_menu" onclick="pularTela('menu','mascaras_de_gas')"><img src="./imagens/botao_mascaras_de_gas.svg" alt="Botão para avançar para o cartão sobre as máscaras de gás."></a>
+            <a class="botoes_do_menu" onclick="pularTela('menu','latrina')"><img src="./imagens/botao_latrina.svg" alt="Botão para avançar para o cartão sobre as latrinas."></a>
+            <a class="botoes_do_menu" onclick="pularTela('menu','sempre_atentos')"><img src="./imagens/botao_sempre_atentos.svg" alt="Botão para avançar para o cartão sobre atenção máxima."></a>
+        </div>
+        <div>
+            <img id="ilustracao" src="./imagens/trincheira.png" alt="Imagem ilustrando uma trincheira da Primeira Guerra Mundial">
+        </div>
+        <div class="botoes_da_direita">
+            <a class="botoes_do_menu" onclick="pularTela('menu','carros_de_assalto')"><img src="./imagens/botao_carros_de_assalto.svg" alt="Botão para avançar para o cartão sobre os carros de assalto."></a>
+            <a class="botoes_do_menu" onclick="pularTela('menu','frentes')"><img src="./imagens/botao_frentes.svg" alt="Botão para avançar para o cartão sobre as frentes."></a>
+            <a class="botoes_do_menu" onclick="pularTela('menu','sacos_de_areia')"><img src="./imagens/botao_sacos_de_areia.svg" alt="Botão para avançar para o cartão sobre os sacos de areia."></a>
+            <a class="botoes_do_menu" onclick="pularTela('menu','cadaveres')"><img src="./imagens/botao_cadaveres.svg" alt="Botão para avançar para o cartão sobre os cadaveres."></a>
+            <a class="botoes_do_menu" onclick="pularTela('menu','alimentacao')"><img src="./imagens/botao_alimentacao.svg" alt="Botão para avançar para o cartão sobre a alimentação."></a>
+            <a class="botoes_do_menu" onclick="pularTela('menu','agua')"><img src="./imagens/botao_agua.svg" alt="Botão para avançar para o cartão sobre a água."></a>
+        </div>
+    </section>
+    <!-- CARTOES -->
+    <section class="secao_cartoes" id="cartoes">
+        <section class="secao avioes" id="avioes" style="display: none">
+            <div >
+                <div class="titulo">
+                    <h2>Aviões</h2>
+                    <a class="botoes" id="botao_fechar" onclick="pularTela('avioes','menu')"><img src="./imagens/botao_com_texto_fechar.svg" alt="Botão para voltar para o menu."></a>
+                </div>
+                <div class="miniatura_e_texto">
+                    <div class="miniatura">
+                        <img src="./imagens/avioes.png" alt="Imagem dos avioes.">
+                    </div>
+                    <div class="texto">
+                        <p>Inicialmente, os aviões foram utilizados apenas para o reconhecimento das regiões. Seus tripulantes informavam a situação das trincheiras inimigas, auxiliando as tropas a que serviam para que ataques surpresa fossem bem sucedidos. No entanto, com o desenrolar da guerra, passaram a ser equipados com armamentos bélicos, como metralhadoras e bombas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="secao metralhadoras" id="metralhadoras" style="display: none">
+            <div >
+                <div class="titulo">
+                    <h2>Metralhadoras</h2>
+                    <a class="botoes" id="botao_fechar" onclick="pularTela('metralhadoras','menu')"><img src="./imagens/botao_com_texto_fechar.svg" alt="Botão para voltar para o menu."></a>
+                </div>
+                <div class="miniatura_e_texto">
+                <div class="miniatura">
+                    <img src="./imagens/metralhadoras.png" alt="Imagem das metralhadoras.">
+                </div>
+                <div class="texto">
+                    <p>Disparando centenas de balas por minuto, as metralhadoras eram armas devastadoras, principalmente quando usadas no solo. No início do conflito, elas eram utilizadas massivamente pelos alemães e, posteriormente, foram adotadas pelos exércitos de todas as potências que participaram do conflito. Nas trincheiras, era uma arma defensiva que tornava quase suicida a saída dos soldados para invadir o campo de batalha adversário. Ela foi uma das responsáveis por transformar a Grande Guerra em uma guerra de trincheiras.</p>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section class="secao tuneis" id="tuneis" style="display: none">
+            <div >
+                <div class="titulo">
+                    <h2>Túneis</h2>
+                    <a class="botoes" id="botao_fechar" onclick="pularTela('tuneis','menu')"><img src="./imagens/botao_com_texto_fechar.svg" alt="Botão para voltar para o menu."></a>
+                </div>
+                <div class="miniatura_e_texto">
+                <div class="miniatura">
+                    <img src="./imagens/tuneis.png" alt="Imagem de tuneis.">
+                </div>
+                <div class="texto">
+                    <p>Nas trincheiras, havia diversos túneis. Alguns levavam para postos médicos, quartéis-generais e armazéns. As tropas também procuravam construir túneis que chegassem às tropas inimigas para ataques surpresa.</p>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section class="secao mascaras_de_gas" id="mascaras_de_gas" style="display: none">
+            <div >
+                <div class="titulo">
+                    <h2>Máscaras de gás</h2>
+                    <a class="botoes" id="botao_fechar" onclick="pularTela('mascaras_de_gas','menu')"><img src="./imagens/botao_com_texto_fechar.svg" alt="Botão para voltar para o menu."></a>
+                </div>
+                <div class="miniatura_e_texto">
+                <div class="miniatura">
+                    <img src="./imagens/mascaras_de_gas.png" alt="Imagem de tuneis.">
+                </div>
+                <div class="texto">
+                    <p>Na Grande Guerra, foi introduzido o uso de gases venenosos (cloro, fosfogênio e mostarda) como arma de guerra. Por essa razão, era comum as tropas, nas trincheiras, estarem equipadas com máscaras de respiração. Os ataques de gás, quando percebidos a tempo, eram avisados pelo soar de campainhas, sinos ou algo similar.</p>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section class="secao latrina" id="latrina" style="display: none">
+            <div >
+                <div class="titulo">
+                    <h2>Latrina</h2>
+                    <a class="botoes" id="botao_fechar" onclick="pularTela('latrina','menu')"><img src="./imagens/botao_com_texto_fechar.svg" alt="Botão para voltar para o menu."></a>
+                </div>
+                <div class="miniatura_e_texto">
+                <div class="miniatura">
+                    <img src="./imagens/latrina.png" alt="Imagem da latrina.">
+                </div>
+                <div class="texto">
+                    <p>A precária estrutura das trincheiras obrigou as tropas a produzir, em diversos pontos, as chamadas latrinas, que eram buracos no chão com 1,5 m de profundidade utilizadas para as necessidades fisiológicas. Quando estavam quase cheias, eram cobertas com terra e novas latrinas eram cavadas.</p>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section class="secao sempre_atentos" id="sempre_atentos" style="display: none">
+            <div >
+                <div class="titulo">
+                    <h2>Atenção máxima</h2>
+                    <a class="botoes" id="botao_fechar" onclick="pularTela('sempre_atentos','menu')"><img src="./imagens/botao_com_texto_fechar.svg" alt="Botão para voltar para o menu."></a>
+                </div>
+                <div class="miniatura_e_texto">
+                <div class="miniatura">
+                    <img src="./imagens/sempre_atentos.png" alt="Imagem sobre atenção máxima.">
+                </div>
+                <div class="texto">
+                    <p>A guerra de trincheiras, em oposição à guerra de assalto, era um combate lento marcado pela paciência e capacidade de sobrevivência das tropas. Muitas vezes os atiradores de elite passavam horas presentando atenção nas tropas inimigas, esperando o momento certo para atirar. Dormir no posto de combate era considerado crime com duras punições.</p>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section class="secao carros_de_assalto" id="carros_de_assalto" style="display: none">
+            <div >
+                <div class="titulo">
+                    <h2>Carros de assalto</h2>
+                    <a class="botoes" id="botao_fechar" onclick="pularTela('carros_de_assalto','menu')"><img src="./imagens/botao_com_texto_fechar.svg" alt="Botão para voltar para o menu."></a>
+                </div>
+                <div class="miniatura_e_texto">
+                    <div class="miniatura">
+                        <img src="./imagens/carros_de_assalto.png" alt="Imagem de tuneis.">
+                    </div>
+                    <div class="texto">
+                        <p>Para avançar sobre a terra de ninguém (local específico da constituição da trincheira) e vencer os diversos obstáculos de defesa das trincheiras, como arames farpados e metralhadoras, os ingleses desenvolveram os carros de assalto (tanques). Eram lentos, porém tinham grande capacidade de força e blindagem para invadir o campo inimigo. Seu primeiro uso ocorreu em 1916, na Batalha do Somme.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="secao frentes" id="frentes" style="display: none">
+            <div >
+                <div class="titulo">
+                    <h2>Frentes</h2>
+                    <a class="botoes" id="botao_fechar" onclick="pularTela('frentes','menu')"><img src="./imagens/botao_com_texto_fechar.svg" alt="Botão para voltar para o menu."></a>
+                </div>
+                <div class="miniatura_e_texto">
+                    <div class="miniatura">
+                        <img src="./imagens/frente.png" alt="Imagem de uma frente.">
+                    </div>
+                    <div class="texto">
+                        <p>As trincheiras chegavam a ter 1,8 metros de largura e 2 metros de profundidade, e eram organizadas em várias frentes; caso a primeira fosse tomada, existiam retaguardas para os soldados recuarem. Geralmente, as linhas de resistência apresentavam uma maior infraestrutura do que as linhas de frente.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="secao sacos_de_areia" id="sacos_de_areia" style="display: none">
+            <div >
+                <div class="titulo">
+                    <h2>Sacos de areia</h2>
+                    <a class="botoes" id="botao_fechar" onclick="pularTela('sacos_de_areia','menu')"><img src="./imagens/botao_com_texto_fechar.svg" alt="Botão para voltar para o menu."></a>
+                </div>
+                <div class="miniatura_e_texto">
+                    <div class="miniatura">
+                        <img src="./imagens/sacos_de_areia.png" alt="Imagem de sacos de areia.">
+                    </div>
+                    <div class="texto">
+                        <p>Os sacos de areia eram uma opção barata para proteger-se contra os projéteis inimigos. Durante a Grande Guerra, era comum que cada soldado carregasse em seu equipamento básico sacos vazios, que poderiam ser enchidos de areia, terra ou lama como forma de proteção de ataques. Uma das tarefas na trincheira era preencher ou restaurar essas barreiras quando danificadas pelo inimigo.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="secao cadaveres" id="cadaveres" style="display: none">
+            <div >
+                <div class="titulo">
+                    <h2>Cadáveres</h2>
+                    <a class="botoes" id="botao_fechar" onclick="pularTela('cadaveres','menu')"><img src="./imagens/botao_com_texto_fechar.svg" alt="Botão para voltar para o menu."></a>
+                </div>
+                <div class="miniatura_e_texto">
+                    <div class="miniatura">
+                        <img src="./imagens/cadaveres.png" alt="Imagem de cadáver.">
+                    </div>
+                    <div class="texto">
+                        <p>Era muito comum, nas trincheiras, os corpos dos soldados abatidos permanecerem ao ar livre, pois raramente havia tréguas para o sepultamento. Esses cadáveres atraiam ratos, que se proliferavam sem controle. Infestações de outros insetos e parasitas, como piolhos, eram constantes. As doenças causadas por essas pragas muitas vezes eram a causa do falecimento de soldados.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="secao alimentacao" id="alimentacao" style="display: none">
+            <div >
+                <div class="titulo">
+                    <h2>Alimentação</h2>
+                    <a class="botoes" id="botao_fechar" onclick="pularTela('alimentacao','menu')"><img src="./imagens/botao_com_texto_fechar.svg" alt="Botão para voltar para o menu."></a>
+                </div>
+                <div class="miniatura_e_texto">
+                    <div class="miniatura">
+                        <img src="./imagens/alimentacao.png" alt="Imagem sobre alimentação.">
+                    </div>
+                    <div class="texto">
+                        <p>Grande parte da alimentação dos soldados, nas trincheiras, era baseada em rações humanas como pão, biscoito, água e comidas enlatadas. O preparo dos alimentos tinha poucos cuidados sanitários, o que aumentava o risco de intoxicações. Muitas vezes, a comida era servida fria e os homens estavam constantemente com fome. Além dessas dificuldades, existia sempre a possibilidade de as rações mal protegidas serem roubadas por ratazanas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="secao agua" id="agua" style="display: none">
+            <div >
+                <div class="titulo">
+                    <h2>Água</h2>
+                    <a class="botoes" id="botao_fechar" onclick="pularTela('agua','menu')"><img src="./imagens/botao_com_texto_fechar.svg" alt="Botão para voltar para o menu."></a>
+                </div>
+                <div class="miniatura_e_texto">
+                    <div class="miniatura">
+                        <img src="./imagens/agua.png" alt="Imagem de água.">
+                    </div>
+                    <div class="texto">
+                        <p>As trincheiras não tinham um sistema de abastecimento de água. Para reabastecer o cantil com esse líquido, muitos soldados armazenavam em baldes a água da chuva ou recorriam a poças deixada pelos temporais (beber água suja poderia causar diarreia e disenteria). Para aliviar o sofrimento, eram oferecidas às tropas, em seus suprimentos, bebidas como rum, vinho ou conhaque, que auxiliavam no amortecimento da dor e do frio. Para disfarçar o gosto ruim da água, muitas vezes ela era servida em forma de chá.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <!--!> JS SCRIPT <!-->
+    <script type="text/javascript">
+        function pularTela(esconder,mostrar){
+            document.getElementById(esconder).style.display="none";
+            document.getElementById(mostrar).style.display="flex";
+            }
+    </script>    
+</body>
+</html>
